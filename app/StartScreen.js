@@ -12,9 +12,8 @@ const StartScreen = ({ navigation }) => {
       <Button
         onPress={() => navigation.navigate("Detection")}
         style={styles.button}
-      >
-        START
-      </Button>
+        title="START"
+      />
     </View>
   );
 };

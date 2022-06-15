@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
-const Button = ({ children, style, onPress }) => {
+const Button = ({ title, style, onPress }) => {
   return (
     <TouchableOpacity
       style={[
@@ -15,7 +15,7 @@ const Button = ({ children, style, onPress }) => {
       ]}
       onPress={onPress}
     >
-      <Text style={{ padding: 10, fontWeight: "bold" }}>{children}</Text>
+      <Text style={{ padding: 10, fontWeight: "bold" }}>{title}</Text>
     </TouchableOpacity>
   );
 };
